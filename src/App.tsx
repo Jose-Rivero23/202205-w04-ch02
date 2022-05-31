@@ -1,9 +1,16 @@
-import React from "react";
+import { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { Form } from "./components/form";
+import { UserModel } from "./components/user";
+import { USERLIST } from "./components/users";
 
-function App() {
+export function App() {
+  //   const [users, setUsers] = useState(users);
+  //   const addUser = (users) => {
+  //     setUsers([...users, user]);
+  //   };
+
   return (
     <div className="App">
       <header>
@@ -16,6 +23,7 @@ function App() {
       </header>
 
       <Form
+        // addUser={addUser}
         name={""}
         lastName={""}
         birthday={new Date()}
